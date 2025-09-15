@@ -1,0 +1,158 @@
+/* Padding global */
+
+.p-0   { padding: 0px; }
+.p-0_5 { padding: 2px; }
+.p-1   { padding: 4px; }
+.p-1_5 { padding: 6px; }
+.p-2   { padding: 8px; }
+.p-2_5 { padding: 10px; }
+.p-3   { padding: 12px; }
+.p-3_5 { padding: 14px; }
+.p-4   { padding: 16px; }
+.p-5   { padding: 20px; }
+.p-6   { padding: 24px; }
+.p-7   { padding: 28px; }
+.p-8   { padding: 32px; }
+.p-9   { padding: 36px; }
+.p-10  { padding: 40px; }
+.p-11  { padding: 44px; }
+.p-12  { padding: 48px; }
+.p-14  { padding: 56px; }
+.p-16  { padding: 64px; }
+.p-20  { padding: 80px; }
+.p-24  { padding: 96px; }
+.p-28  { padding: 112px; }
+.p-32  { padding: 128px; }
+.p-36  { padding: 144px; }
+.p-40  { padding: 160px; }
+.p-44  { padding: 176px; }
+.p-48  { padding: 192px; }
+.p-52  { padding: 208px; }
+.p-56  { padding: 224px; }
+.p-60  { padding: 240px; }
+.p-64  { padding: 256px; }
+.p-72  { padding: 288px; }
+.p-80  { padding: 320px; }
+.p-96  { padding: 384px; }
+
+/* Padding horizontal */
+
+.px-0   { padding-left: 0px;   padding-right: 0px; }
+.px-0_5 { padding-left: 2px;   padding-right: 2px; }
+.px-1   { padding-left: 4px;   padding-right: 4px; }
+.px-1_5 { padding-left: 6px;   padding-right: 6px; }
+.px-2   { padding-left: 8px;   padding-right: 8px; }
+.px-2_5 { padding-left: 10px;  padding-right: 10px; }
+.px-3   { padding-left: 12px;  padding-right: 12px; }
+.px-3_5 { padding-left: 14px;  padding-right: 14px; }
+.px-4   { padding-left: 16px;  padding-right: 16px; }
+.px-5   { padding-left: 20px;  padding-right: 20px; }
+.px-6   { padding-left: 24px;  padding-right: 24px; }
+.px-7   { padding-left: 28px;  padding-right: 28px; }
+.px-8   { padding-left: 32px;  padding-right: 32px; }
+.px-9   { padding-left: 36px;  padding-right: 36px; }
+.px-10  { padding-left: 40px;  padding-right: 40px; }
+.px-11  { padding-left: 44px;  padding-right: 44px; }
+.px-12  { padding-left: 48px;  padding-right: 48px; }
+.px-14  { padding-left: 56px;  padding-right: 56px; }
+.px-16  { padding-left: 64px;  padding-right: 64px; }
+.px-20  { padding-left: 80px;  padding-right: 80px; }
+.px-24  { padding-left: 96px;  padding-right: 96px; }
+.px-28  { padding-left: 112px; padding-right: 112px; }
+.px-32  { padding-left: 128px; padding-right: 128px; }
+.px-36  { padding-left: 144px; padding-right: 144px; }
+.px-40  { padding-left: 160px; padding-right: 160px; }
+.px-44  { padding-left: 176px; padding-right: 176px; }
+.px-48  { padding-left: 192px; padding-right: 192px; }
+.px-52  { padding-left: 208px; padding-right: 208px; }
+.px-56  { padding-left: 224px; padding-right: 224px; }
+.px-60  { padding-left: 240px; padding-right: 240px; }
+.px-64  { padding-left: 256px; padding-right: 256px; }
+.px-72  { padding-left: 288px; padding-right: 288px; }
+.px-80  { padding-left: 320px; padding-right: 320px; }
+.px-96  { padding-left: 384px; padding-right: 384px; }
+
+/* Padding vertical  */
+
+.py-0   { padding-top: 0px;   padding-bottom: 0px; }
+.py-0_5 { padding-top: 2px;   padding-bottom: 2px; }
+.py-1   { padding-top: 4px;   padding-bottom: 4px; }
+.py-1_5 { padding-top: 6px;   padding-bottom: 6px; }
+.py-2   { padding-top: 8px;   padding-bottom: 8px; }
+.py-2_5 { padding-top: 10px;  padding-bottom: 10px; }
+.py-3   { padding-top: 12px;  padding-bottom: 12px; }
+.py-3_5 { padding-top: 14px;  padding-bottom: 14px; }
+.py-4   { padding-top: 16px;  padding-bottom: 16px; }
+.py-5   { padding-top: 20px;  padding-bottom: 20px; }
+.py-6   { padding-top: 24px;  padding-bottom: 24px; }
+.py-7   { padding-top: 28px;  padding-bottom: 28px; }
+.py-8   { padding-top: 32px;  padding-bottom: 32px; }
+.py-9   { padding-top: 36px;  padding-bottom: 36px; }
+.py-10  { padding-top: 40px;  padding-bottom: 40px; }
+.py-11  { padding-top: 44px;  padding-bottom: 44px; }
+.py-12  { padding-top: 48px;  padding-bottom: 48px; }
+.py-14  { padding-top: 56px;  padding-bottom: 56px; }
+.py-16  { padding-top: 64px;  padding-bottom: 64px; }
+.py-20  { padding-top: 80px;  padding-bottom: 80px; }
+.py-24  { padding-top: 96px;  padding-bottom: 96px; }
+.py-28  { padding-top: 112px; padding-bottom: 112px; }
+.py-32  { padding-top: 128px; padding-bottom: 128px; }
+.py-36  { padding-top: 144px; padding-bottom: 144px; }
+.py-40  { padding-top: 160px; padding-bottom: 160px; }
+.py-44  { padding-top: 176px; padding-bottom: 176px; }
+.py-48  { padding-top: 192px; padding-bottom: 192px; }
+.py-52  { padding-top: 208px; padding-bottom: 208px; }
+.py-56  { padding-top: 224px; padding-bottom: 224px; }
+.py-60  { padding-top: 240px; padding-bottom: 240px; }
+.py-64  { padding-top: 256px; padding-bottom: 256px; }
+.py-72  { padding-top: 288px; padding-bottom: 288px; }
+.py-80  { padding-top: 320px; padding-bottom: 320px; }
+.py-96  { padding-top: 384px; padding-bottom: 384px; }
+
+/* Les display */
+
+.block        { display: block; }
+.inline       { display: inline; }
+.inline-block { display: inline-block; }
+.flex         { display: flex; }
+.inline-flex  { display: inline-flex; }
+
+/* Les justify */
+
+.justify-start   { justify-content: flex-start; }
+.justify-end     { justify-content: flex-end; }
+.justify-center  { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-around  { justify-content: space-around; }
+.justify-evenly  { justify-content: space-evenly; }
+
+/* Les align */
+
+.items-start    { align-items: flex-start; }
+.items-end      { align-items: flex-end; }
+.items-center   { align-items: center; }
+.items-baseline { align-items: baseline; }
+.items-stretch  { align-items: stretch; }
+
+/* les taille de texte */
+
+.text-xs   { font-size: 0.75rem;   line-height: 1rem; }     
+.text-sm   { font-size: 0.875rem;  line-height: 1.25rem; }  
+.text-base { font-size: 1rem;      line-height: 1.5rem; }  
+.text-lg   { font-size: 1.125rem;  line-height: 1.75rem; }  
+.text-xl   { font-size: 1.25rem;   line-height: 1.75rem; }  
+.text-2xl  { font-size: 1.5rem;    line-height: 2rem; }     
+.text-3xl  { font-size: 1.875rem;  line-height: 2.25rem; }  
+.text-4xl  { font-size: 2.25rem;   line-height: 2.5rem; }   
+.text-5xl  { font-size: 3rem;      line-height: 1; }        
+.text-6xl  { font-size: 3.75rem;   line-height: 1; }       
+.text-7xl  { font-size: 4.5rem;    line-height: 1; }        
+.text-8xl  { font-size: 6rem;      line-height: 1; }       
+.text-9xl  { font-size: 8rem;      line-height: 1; }       
+
+/* Alignement de text */
+
+.text-left    { text-align: left; }
+.text-center  { text-align: center; }
+.text-right   { text-align: right; }
+.text-justify { text-align: justify; }
