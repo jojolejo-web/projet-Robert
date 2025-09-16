@@ -7,18 +7,65 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="">
-      <nav class="flex justify-between px-8 py-3 ">
-        <img src="./public/GoOut.png" alt="Logo" />
-        <div class="flex gap-2">
-          <a href="/" class="no-underline"> Accueil </a>
-          <a href="" class="no-underline"> Lieux </a>
+    <header class="w-screen bg-transparent fixed top-0 left-0 right-0 z-10">
+      <nav class="flex justify-between px-8 items-center">
+        <figure>
+          <img src="./public/GoOut.png" alt="Logo" class="w-14" />
+        </figure>
 
-          <a href="./Apropos.html" class="no-underline"> A propos </a>
-          <a href="./Contact.html" class="no-underline"> Contact </a>
+        <div class="flex gap-4" style="translate: -30px">
+          <a href="/" class="no-underline text-color"> Accueil </a>
+          <a href="" class="no-underline text-color"> Lieux </a>
+
+          <a href="./Apropos.html" class="no-underline text-color">
+            A propos
+          </a>
+          <a href="./Contact.html" class="no-underline text-color"> Contact </a>
+        </div>
+
+        <div>
+          <button class="bg-green py-3 px-5 rounded-full border-0 hoverbtn">
+            <a href="./Contact.html" class="text-color no-underline font-bold"
+              >Contact</a
+            >
+          </button>
         </div>
       </nav>
     </header>
-    
+
+    <main style="overflow: hidden">
+      <img
+        class="absolute h-full w-full z-1"
+        src="./public/fond-hero.png"
+        alt=""
+        style="filter: brightness(65%); object-fit: cover"
+      />
+      <section
+        class="flex flex-col gap-8 items-center justify-center z-2 absolute w-screen"
+        style="height: 100vh"
+      >
+        <div class="flex flex-col items-center gap-2">
+          <h1 class="text-6xl text-color m-0">Cherchez, trouvez et partez !</h1>
+          <h4 class="text-white font-light text-sm m-0" style="color: rgb(138, 138, 138);">Cherchez | trouvez | découvrez </h4>
+        </div>
+
+        <form action="" class="flex items-center gap-4">
+          <input
+            type="text"
+            name=""
+            id=""
+            class="rounded-full border-0 px-4 py-3 w-96 inputactive"
+            placeholder="Rechercher..."
+          />
+          <button
+            class="bg-green py-3 px-3 rounded-full border-0 hoverbtn flex items-center"
+          >
+            <img src="./public/fleche-droite.png" class="w-4" alt="" />
+          </button>
+        </form>
+      </section>
+
+      <section></section>
+    </main>
   </body>
 </html>
