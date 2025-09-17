@@ -7,6 +7,27 @@
     --color-5 : #051F20;
 }
 
+.region:hover{
+    fill: var(--primary-color);
+    stroke: var(--primary-color);
+    cursor: pointer;
+}
+
+.tooltip{
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ;
+    padding: 8px;
+
+}
+
+.map{
+    fill:var(--secondary-color);
+    stroke-width: 1px;
+    stroke: #235347;
+}
+
 body{
     padding: 0;
     margin: 0;
