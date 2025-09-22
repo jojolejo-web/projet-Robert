@@ -16,6 +16,10 @@
 .tooltip{
     position: fixed;
     pointer-events: none;
+    background-color: #0c6146;
+    border-radius:  8px;
+    
+    color: white;
     opacity: 0;
     transition: opacity 0.2s ;
     padding: 8px;
