@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body style="background-color:var(--secondary-color)">
     <header class="w-full bg-transparent fixed top-0 z-10" style="overflow: hidden">
         <nav class="flex justify-between px-8 items-center">
             <figure class="">
@@ -33,16 +33,23 @@
         </nav>
 
         <main>
-            <form class="flex align-center justify-center" style="background-color:var(--primary-color)">
-                <label>
-                    Mail :
-                    <input type="email" class="border-1" placeholder="Non">
-                    nom@exemple.com
-                    </input>
-                </label>
-                <label>
-                    <textarea></textarea>
-                </label>
-            </form>
+            <div class="flex flex-col gap-8 items-center justify-center">
+                <h1 class="text-5xl m-0 text-center">Un avis, conseil, problème à signaler... C'est ici !</h1>
+                <h4 class="text-white font-light text-sm m-0" style="color: rgb(138, 138, 138)">Aidez nous à améliorer notre site.</h4>
+                <form class="p-32">
+                    <label class="font-bold">
+                        Mail :
+                        <input type="email" class="border-1 rounded-2xl px-8 py-2" placeholder="nom@exemple.com">
+                        
+                        </input>
+                    </label>
+                    <label class="font-bold">
+                        Un message à nous faire passer ?
+                        <textarea class="rounded-2xl p-10"></textarea>
+                    </label>
+                    <button class="bg-green py-3 px-5 rounded-full border-0 hoverbtn">
+                        <a class="text-color no-underline font-bold">Envoyer</a>
+                </form>
+            </div>
         </main>
     </header>
