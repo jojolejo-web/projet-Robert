@@ -32,6 +32,10 @@
     stroke: #235347;
 }
 
+.cardVille{
+    opacity: 0;
+}
+
 body{
     padding: 0;
     margin: 0;

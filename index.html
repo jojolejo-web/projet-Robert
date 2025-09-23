@@ -83,9 +83,11 @@
         </form>
       </section>
 
-      <section class="w-full">
+      <section class="py-12 px-12 flex gap-8">
         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
         <div id="tooltip" class="tooltip">tooltip</div>
+
+        
         
         <svg
         class="map"
@@ -230,10 +232,29 @@
             />
           </g>
         </svg>
+        <div id="card" class="cardVille">
+          caca
+          <script>ville.map(i => (
+            <div>{i.name}</div>
+          ))</script>
+        </div>
       </section>
     </main>
+
+
     <script>
+      const ville = [
+    {
+        name:"Île-de-France",
+        description:"azoidaoi",
+        acivité:"faire caca"
+    }
+]
+
+
       const tooltip = document.getElementById("tooltip");
+      const card = document.getElementById("card");
+
 
       document.querySelectorAll(".region").forEach((region) => {
         region.addEventListener("mousemove", (e) => {
@@ -244,7 +265,13 @@
         });
         region.addEventListener("mouseleave", () => {
           tooltip.style.opacity = "0";
+          
+
         });
+        region.addEventListener("click", (e) => {
+          card.style.opacity="1";
+
+        })
       });
     </script>
   </body>
