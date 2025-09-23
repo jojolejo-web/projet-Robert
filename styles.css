@@ -56,7 +56,7 @@ body{
 
 .text-color{color: var(--text-color);}
 
-
+.hover-link:hover{color: var(--text-color);}
 .hoverbtn:hover{background-color: #0c6146; cursor: pointer; scale: 1.04;}
 
 /* Les bordure */
