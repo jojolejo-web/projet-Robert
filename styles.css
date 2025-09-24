@@ -90,6 +90,17 @@ tr:last-child td {
         }
 
 
+/* Go Out Lien page A Propos*/
+
+.goout{
+    color: black;
+    text-decoration: none;
+}
+
+.goout:hover{
+    text-decoration: underline;
+}
+
 /* Les position */
 
 .absolute{position: absolute;}
