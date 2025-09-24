@@ -6,7 +6,7 @@ const ville = [
     activité: "Visiter musées et monuments (Louvre, Tour Eiffel), balades en ville",
     img1:" https://i.pinimg.com/1200x/66/1c/ab/661cab7438c28bc1c6d3f8ca28276881.jpg",
     img2: "https://i.pinimg.com/736x/9d/a9/e6/9da9e619b92fde1f455b0a6fea5ef3c2.jpg",
-    img3:
+    img3:""
   },
   {
     name: "Auvergne-Rhône-Alpes",
@@ -14,7 +14,7 @@ const ville = [
     activité: "Ski, randonnées en montagne, gastronomie lyonnaise",
     img1: "",
     img2: "",
-    img3:
+    img3:"",
   },
   {
     name: "Bourgogne-Franche-Comté",
@@ -22,7 +22,7 @@ const ville = [
     activité: "Dégustation de vins, visites de châteaux et canaux",
     img1: "",
     img2: "",
-    img3:
+    img3:"",
   },
   {
     name: "Bretagne",
@@ -30,7 +30,7 @@ const ville = [
     activité: "Balades côtières, fruits de mer, festivals celtiques",
     img1: "",
     img2: "",
-    img3:
+    img3:"",
   },
   {
     name: "Centre-Val de Loire",
@@ -38,7 +38,7 @@ const ville = [
     activité: "Visiter châteaux, balade à vélo le long de la Loire",
     img1: "",
     img2: "",
-    img3:
+    img3:"",
   },
   {
     name: "Corse",
@@ -46,7 +46,7 @@ const ville = [
     activité: "Randonnée (GR20), plages, découverte de la gastronomie corse",
     img1: "",
     img2: "",
-    img3:
+    img3:""
   },
   {
     name: "Grand Est",
@@ -54,7 +54,7 @@ const ville = [
     activité: "Visiter marchés de Noël, déguster vins d'Alsace, découvrir Strasbourg",
     img1: "",
     img2: "",
-    img3:
+    img3:""
   },
   {
     name: "Hauts-de-France",
@@ -62,7 +62,7 @@ const ville = [
     activité: "Patrimoine industriel, plages, gastronomie du Nord",
     img1: "",
     img2: "",
-    img3:
+    img3:""
   },
   {
     name: "Normandie",
@@ -70,7 +70,7 @@ const ville = [
     activité: "Découvrir plages du Débarquement, cidre, fromages",
     img1: "",
     img2: "",
-    img3:
+    img3:""
   },
   {
     name: "Nouvelle-Aquitaine",
@@ -78,7 +78,7 @@ const ville = [
     activité: "Surf, dégustation de vins, visites de Bastides",
     img1: "",
     img2: "",
-    img3:
+    img3:""
   },
   {
     name: "Occitanie",
@@ -86,7 +86,7 @@ const ville = [
     activité: "Plages, randonnées pyrénéennes, visites historiques (Carcassonne)",
     img1: "",
     img2: "",
-    img3:
+    img3:""
   },
   {
     name: "Pays de la Loire",
@@ -94,7 +94,7 @@ const ville = [
     activité: "Balades en bord d'eau, châteaux, festivals",
     img1: "",
     img2: "",
-    img3:
+    img3:""
   },
   {
     name: "Provence-Alpes-Côte d'Azur",
@@ -102,6 +102,6 @@ const ville = [
     activité: "Plages, marchés provençaux, randonnées et stations de ski proches",
     img1: "",
     img2: "",
-    img3:
+    img3:""
   }
 ]

@@ -27,7 +27,7 @@
         </div>
 
         <div>
-          <button class="bg-green py-3 px-5 rounded-full border-0 hoverbtn">
+          <button class="bg-green py-3 px-5 rounded-full border-0 hoverbtn" >
             <a href="./Contact.html" class="text-color no-underline font-bold"
               >Contact</a
             >
@@ -83,7 +83,7 @@
         </form>
       </section>
 
-      <section class="py-12 px-12 flex gap-8">
+      <section class="py-12 w-full items-center justify-center flex gap-8">
         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
         <div id="tooltip" class="tooltip">tooltip</div>
 
@@ -234,6 +234,18 @@
       </section>
     </main>
 
+    <footer class="bg-green p-12 flex items-center justify-center">
+      <p class="">
+        © 2025 Entreprise GoOut. Tous droits réservés. |
+        <a
+          class="no-underline text-black hover-link"
+          href="./mentionsLegal.html"
+          >Mentions légales</a
+        >
+        | Politique de confidentialité
+      </p>
+    </footer>
+
     <script>
       const villes = [
         {
@@ -242,6 +254,9 @@
             "Région autour de Paris, riche en patrimoine historique et culturel.",
           activité:
             "Visiter musées et monuments (Louvre, Tour Eiffel), balades en ville",
+          img1: " https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Louvre_Museum_Wikimedia_Commons.jpg/330px-Louvre_Museum_Wikimedia_Commons.jpg",
+          img2: "https://media.tacdn.com/media/attractions-splice-spp-674x446/12/41/5c/8d.jpg",
+          img3: "https://cdn-imgix.headout.com/media/images/33ac22c30b1018ac1aa75c6a4c24075a-7504-Paris-ArcdeTriompheTicketswithRooftopAccess-09.jpg?auto=format&q=90&crop=faces&fit=crop",
         },
         {
           name: "Auvergne-Rhône-Alpes",
@@ -325,12 +340,12 @@
       function villeAffiche(list) {
         card.innerHTML = list.map(
           (i) => `
-        <div>
+        <div class="w-full">
           <h1 class="text-2xl font-bold">${i.name}</h1>
-            <article class="grid grid-col-3">
-              <img href=${i.img1} />
-              <img href=${i.img2} />
-              <img href=${i.img3} />
+            <article class="grid grid-cols-3">
+              
+              <img src="${i.img2}"class="h-96" />
+              <img src="${i.img3} "class="h-96"/>
 
             </article>
             <p>${i.description}</p>
@@ -364,8 +379,4 @@
       });
     </script>
   </body>
-  <footer class="bg-green p-12 flex items-center justify-center">
-        <p class="">© 2025 Entreprise GoOut. Tous droits réservés. | <a class="no-underline text-black hover-link" href="./mentionsLegal.html">Mentions légales</a> |
-            Politique de confidentialité</p>
-  </footer>
 </html>
