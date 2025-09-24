@@ -5,6 +5,7 @@
     --tertiary-color : #163832;
     --color-4 : #0B2B26;
     --color-5 : #051F20;
+    --grey : #959697;
 }
 
 .region:hover{
@@ -55,6 +56,9 @@ body{
 .playfair{font-family: 'Playfair Display', serif;}
 
 .text-color{color: var(--text-color);}
+.primary-color{color: var(--primary-color);}
+.secondary-color{color: var(--secondary-color);}
+.grey{color: var(--grey);}
 
 .hover-link:hover{color: var(--text-color);}
 .hoverbtn:hover{background-color: #0c6146; cursor: pointer; scale: 1.04;}
