@@ -602,66 +602,75 @@ tr:last-child td {
 /* Accordéon de con */
 
 .accordion {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            margin-bottom: 20px;
-        }
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 70%;
+}
 
-        /* Étape 3: Style des headers (boutons) */
-        .accordion-header {
-            background-color: #f8f9fa;
-            border: none;
-            width: 100%;
-            padding: 15px 20px;
-            text-align: left;
-            font-size: 16px;
-            font-weight: 500;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: background-color 0.3s ease;
-            border-bottom: 1px solid #ddd;
-        }
+        
+.accordion-header {
+    background-color: #f8f9fa;
+    border: none;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid #ddd;
+}
 
-        .accordion-header:hover {
-            background-color: #e9ecef;
-        }
+.accordion span {
+    display: flex;
+    justify-content: end;
+}
 
-        .accordion-header.active {
-            background-color: #007bff;
-            color: white;
-        }
+.accordion-header:hover {
+    background-color: #e9ecef;
+}
 
-        /* Étape 4: Icône de flèche */
-        .accordion-icon {
-            transition: transform 0.3s ease;
-            font-size: 18px;
-        }
+.accordion-header.active {
+    background-color: #007bff;
+    color: white;
+}
 
-        .accordion-header.active .accordion-icon {
-            transform: rotate(180deg);
-        }
+.accordion-header.active span {
+    background-color: #007bff;
+    color: white;
+}
 
-        /* Étape 5: Contenu de l'accordion */
-        .accordion-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease, padding 0.3s ease;
-            background-color: white;
-        }
+.accordion-icon {
+    transition: transform 0.3s ease;
+    font-size: 18px;
+}
 
-        .accordion-content.active {
-            max-height: 500px; /* Ajustez selon vos besoins */
-            padding: 20px;
-        }
+.accordion-header.active .accordion-icon {
+    transform: rotate(180deg);
+}
 
-        .accordion-item:not(:last-child) .accordion-header {
-            border-bottom: 1px solid #ddd;
-        }
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    background-color: white;
+}
 
-        .accordion-item:last-child .accordion-header {
-            border-bottom: none;
-        }
+.accordion-content.active {
+    max-height: 500px; 
+    padding: 20px;
+}
+
+.accordion-item:not(:last-child) .accordion-header {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-item:last-child .accordion-header {
+    border-bottom: none;
+}
 
