@@ -2,107 +2,171 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>Document</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./styles.css" />
+	<title>Document</title>
 </head>
 
 <body>
-    <header class="w-full bg-transparent fixed top-0 z-10" style="overflow: hidden">
-        <nav class="flex justify-between px-8 items-center bg-green-hours">
-            <figure class="">
-                <img src="./public/GoOut.png" alt="Logo" class="w-14" />
-            </figure>
+	<header class="w-full bg-transparent fixed top-0 z-10" style="overflow: hidden">
+		<nav class="flex justify-between px-8 items-center bg-green-hours">
+			<figure class="">
+				<img src="./public/GoOut.png" alt="Logo" class="w-14" />
+			</figure>
 
-            <div class="flex gap-4" style="translate: -30px">
-                <a href="/" class="no-underline text-black"> Accueil </a>
-                <a href="./lieux.html" class="no-underline text-black"> Lieux </a>
+			<div class="flex gap-4" style="translate: -30px">
+				<a href="/" class="no-underline text-black"> Accueil </a>
+				<a href="./lieux.html" class="no-underline text-black"> Lieux </a>
 
-                <a href="./Apropos.html" class="no-underline text-black">
-                    A propos
-                </a>
-            </div>
+				<a href="./Apropos.html" class="no-underline text-black">
+					A propos
+				</a>
+			</div>
 
-            <div>
-                <button class="bg-green py-3 px-5 rounded-full border-0 hoverbtn">
-                    <a href="./Contact.html" class="text-color no-underline font-bold">
-                        Contact
-                    </a>
-                </button>
-            </div>
-        </nav>
+			<div>
+				<button class="bg-green py-3 px-5 rounded-full border-0 hoverbtn">
+					<a href="./Contact.html" class="text-color no-underline font-bold">
+						Contact
+					</a>
+				</button>
+			</div>
+		</nav>
 
-    </header>
+	</header>
 
-    <main class="py-24">
-        <section class="px-48 py-10 flex justify-center items-center">
-        <table>
-            <thead>
-              <tr>
-                <th>Top</th>
-                <th>Lieux</th>
-                <th></th>
-                <th>Ville</th>
-              </tr>
-            </thead>
-            <tr>
-              <td>1 -</td>
-              <td>Développement</td>
-              <td><span class="bg-green-hours py-2 px-2 rounded-xl text-primary">2 heures 30</span></td>
-            </tr>
-            <tr>
-              <td>2 -</td>
-              <td>Développement Front-End</td>
-              <td><span class="bg-green-hours py-2 px-2 rounded-xl text-primary"></span></td>
-            </tr>
-            <tr>
-              <td>3 -</td>
-              <td>Charte Graphique, Développement Front-End</td>
-              <td><span class="bg-green-hours py-2 px-2 rounded-xl text-primary">1 heure</span></td>
-            </tr>
-            <tr>
-              <td>4 -</td>
-              <td>Maquette, Développement Front-End</td>
-              <td><span class="bg-green-hours py-2 px-2 rounded-xl text-primary">3 heures</span></td>
-            </tr>
-            <tr>
-              <td>5 -</td>
-              <td>Maquette, Développement Front-End</td>
-              <td><span class="bg-green-hours py-2 px-2 rounded-xl text-primary">3 heures</span></td>
-            </tr>
-            <tr>
-              <td>6 -</td>
-              <td>Maquette, Développement Front-End</td>
-              <td><span class="bg-green-hours py-2 px-2 rounded-xl text-primary">3 heures</span></td>
-            </tr>
-            <tr>
-              <td>7 -</td>
-              <td>Maquette, Développement Front-End</td>
-              <td><span class="bg-green-hours py-2 px-2 rounded-xl text-primary">3 heures</span></td>
-            </tr>
-            <tr>
-              <td>8 -</td>
-              <td>Maquette, Développement Front-End</td>
-              <td><span class="bg-green-hours py-2 px-2 rounded-xl text-primary">3 heures</span></td>
-            </tr>
-            <tr>
-              <td>9 -</td>
-              <td>Maquette, Développement Front-End</td>
-              <td><span class="bg-green-hours py-2 px-2 rounded-xl text-primary">3 heures</span></td>
-            </tr>
-            <tr>
-              <td>10 -</td>
-              <td>Maquette, Développement Front-End</td>
-              <td><span class="bg-green-hours py-2 px-2 rounded-xl text-primary">3 heures</span></td>
-            </tr>
-          </table>
-      </section>
-    </main>
+	<main class="py-24">
+		<section class="px-48 py-10 flex justify-center items-center">
+			<div class="accordion">
+				<table>
+					<thead>
+						<tr>
+							<th>Top</th>
+							<th>Lieux</th>
+							<th>Ville</th>
+							<th></th>
+							<th></th> <!-- ligne pour bouton accordéon -->
+						</tr>
+					</thead>
+					<tr>
+						<td>1 -</td>
+						<td>Développement</td>
+						<td><span class="bg-green-hours py-2 px-2 rounded-xl text-primary">2 heures 30</span></td>
+						<td><button class="accordion-header">
+								<span class="accordion-icon">▼</span>
+							</button></td>
+						<div class="accordion-content">
+							<p>Un accordion est un composant d'interface utilisateur qui permet d'afficher et de masquer des
+								sections
+								de contenu de manière interactive. Il est parfait pour organiser l'information de façon
+								compacte.</p>
+							<p><strong>Avantages :</strong></p>
+							<ul>
+								<li>Économise l'espace sur la page</li>
+								<li>Améliore l'organisation du contenu</li>
+								<li>Offre une navigation intuitive</li>
+							</ul>
+						</div>
 
-    <footer class="bg-green-hours p-12 flex items-center justify-center">
-        <p class="">© 2025 Entreprise GoOut. Tous droits réservés. | <a class="no-underline text-black hover-link"
-                href="./mentionsLegal.html">Mentions légales</a> |
-            Politique de confidentialité</p>
-    </footer>
+					</tr>
+					<tr>
+						<td>2 -</td>
+						<td>Développement Front-End</td>
+						<td><span class="bg-green-hours py-2 px-2 rounded-xl text-primary"></span></td>
+					</tr>
+					<tr>
+						<td>3 -</td>
+						<td>Charte Graphique, Développement Front-End</td>
+						<td><span class="bg-green-hours py-2 px-2 rounded-xl text-primary">1 heure</span></td>
+					</tr>
+					<tr>
+						<td>4 -</td>
+						<td>Maquette, Développement Front-End</td>
+						<td><span class="bg-green-hours py-2 px-2 rounded-xl text-primary">3 heures</span></td>
+					</tr>
+					<tr>
+						<td>5 -</td>
+						<td>Maquette, Développement Front-End</td>
+						<td><span class="bg-green-hours py-2 px-2 rounded-xl text-primary">3 heures</span></td>
+					</tr>
+					<tr>
+						<td>6 -</td>
+						<td>Maquette, Développement Front-End</td>
+						<td><span class="bg-green-hours py-2 px-2 rounded-xl text-primary">3 heures</span></td>
+					</tr>
+					<tr>
+						<td>7 -</td>
+						<td>Maquette, Développement Front-End</td>
+						<td><span class="bg-green-hours py-2 px-2 rounded-xl text-primary">3 heures</span></td>
+					</tr>
+					<tr>
+						<td>8 -</td>
+						<td>Maquette, Développement Front-End</td>
+						<td><span class="bg-green-hours py-2 px-2 rounded-xl text-primary">3 heures</span></td>
+					</tr>
+					<tr>
+						<td>9 -</td>
+						<td>Maquette, Développement Front-End</td>
+						<td><span class="bg-green-hours py-2 px-2 rounded-xl text-primary">3 heures</span></td>
+					</tr>
+					<tr>
+						<td>10 -</td>
+						<td>Maquette, Développement Front-End</td>
+						<td><span class="bg-green-hours py-2 px-2 rounded-xl text-primary">3 heures</span></td>
+					</tr>
+				</table>
+			</div>
+		</section>
+
+		<!-- Test accordion -->
+		<div class="accordion">
+			<div class="accordion-item">
+				<button class="accordion-header">
+					🏠 Qu'est-ce qu'un accordion ?
+					<span class="accordion-icon"><img src="./public/down-arrow.png" width="5%"></span>
+				</button>
+				<div class="accordion-content">
+					<p>Un accordion est un composant d'interface utilisateur qui permet d'afficher et de masquer des sections
+						de contenu de manière interactive. Il est parfait pour organiser l'information de façon compacte.</p>
+					<p><strong>Avantages :</strong></p>
+					<ul>
+						<li>Économise l'espace sur la page</li>
+						<li>Améliore l'organisation du contenu</li>
+						<li>Offre une navigation intuitive</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+	</main>
+
+	<footer class="bg-green-hours p-12 flex items-center justify-center">
+		<p class="">© 2025 Entreprise GoOut. Tous droits réservés. | <a class="no-underline text-black hover-link"
+				href="./mentionsLegal.html">Mentions légales</a> |
+			Politique de confidentialité</p>
+	</footer>
+
+	<script>
+        // JavaScript pour faire fonctionner l'accordion
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                
+                // Basculer l'état actif
+                header.classList.toggle('active');
+                content.classList.toggle('active');
+                
+                // Fermer les autres accordions (optionnel)
+                accordionHeaders.forEach(otherHeader => {
+                    if (otherHeader !== header) {
+                        otherHeader.classList.remove('active');
+                        otherHeader.nextElementSibling.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
