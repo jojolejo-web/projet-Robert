@@ -636,12 +636,7 @@ tr:last-child td {
 }
 
 .accordion-header.active {
-    background-color: #007bff;
-    color: white;
-}
-
-.accordion-header.active span {
-    background-color: #007bff;
+    background-color: var(--primary-color);
     color: white;
 }
 
