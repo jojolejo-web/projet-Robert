@@ -101,6 +101,10 @@ tr:last-child td {
     text-decoration: underline;
 }
 
+/* Les bordures de couleur */
+
+.border-black   { border-color: #000000; }
+
 /* Les position */
 
 .absolute{position: absolute;}
