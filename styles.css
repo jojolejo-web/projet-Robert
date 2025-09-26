@@ -538,6 +538,12 @@ tr:last-child td {
 .min-w-full { min-width: 100%; }
 .max-w-full { max-width: 100%; }
 
+.w-25pourcent {width: 25%;}
+.w-50pourcent {width: 50%;}
+.w-60pourcent {width: 60%;}
+.w-75pourcent {width: 75%;}
+.w-100pourcent {width: 50%;}
+
 .h-full   { height: 100%; }
 .h-screen { height: 100vw; }
 
