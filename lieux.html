@@ -290,8 +290,7 @@
 
 		<h1>Regardez regardez c'est le test de Tristan</h1>
 		<section class="flex flex-col items-center justify-center py-10">
-			<div class="accordion w-75pourcent">
-				<div class="data-lieux"></div>
+			<div class="accordion w-75pourcent" id="data-lieux">
 			</div>
 		</section>
 
@@ -305,12 +304,12 @@
 		</p>
 	</footer>
 
-	<script src="./data/page-lieux.js"></script>
+	<script src="data/page-lieux.js"></script>
 	<script>
 		
 		const dataLieux = document.getElementById("data-lieux");
 
-		function affichageLieux (lieux){
+		
 			dataLieux.innerHTML = lieux.map(
 			(i) => `
 				<div class="accordion-item">
@@ -320,18 +319,20 @@
 						</p>
 						<p>${i.nomLieu}</p>
 						<p>${i.nomVille}</p>
-						<img class="accordion-icon" src="${i.img}" width="2%">
+						<img src="./public/down-arrow.png" alt="cité de Carcassonne" width="2%">
 					</button>
 					<div class="accordion-content flex items-center justify-center gap-5">
-						<img class="w-50pourcent" src="./public/fond-hero.png" alt="cité de Carcassonne">
+						<img class="accordion-icon" src="${i.img}" width="2%">
+						
 						<section class="flex flex-col justify-center">
 							<p>${i.text}</p>
 						</section>
 					</div>
-				</div>
-				`
-			);
-		}
+				</div>`
+			).join('')
+		
+
+	
 
 
 		const accordionHeaders = document.querySelectorAll('.accordion-header');
