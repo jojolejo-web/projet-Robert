@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -53,20 +53,7 @@
           </h4>
         </div>
 
-        <form action="" class="flex items-center gap-4">
-          <input
-            type="text"
-            name=""
-            id=""
-            class="rounded-full border-0 px-4 py-3 w-96 inputactive"
-            placeholder="Rechercher..."
-          />
-          <button
-            class="bg-green py-3 px-3 rounded-full border-0 hoverbtn flex items-center"
-          >
-            <img src="./public/fleche-droite.png" class="w-4" alt="" />
-          </button>
-        </form>
+        
       </section>
 
       <section class="py-12 w-full items-center justify-center flex gap-8">
@@ -244,19 +231,39 @@
       function villeAffiche(list) {
         card.innerHTML = list.map(
           (i) => `
-        <div class="w-full">
-          <h1 class="text-2xl font-bold">${i.name}</h1>
-            <article class="grid grid-cols-3">
-              
-              <img src="${i.img2}"class="h-96" />
-              <img src="${i.img3} "class="h-96"/>
-
-            </article>
-            <p>${i.description}</p>
-            <p>${i.activité}</p>
-          
-          
+        <article class="mx-auto flex w-full max-w-5xl flex-col gap-8 rounded-3xl bg-white/85 p-8 text-slate-700 shadow-2xl ring-1 ring-emerald-500/10 backdrop-blur min-h-[560px]">
+          <header class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div class="space-y-2">
+              <span class="inline-flex items-center rounded-full bg-emerald-50 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-600">Region</span>
+              <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">${i.name}</h2>
+              <p class="max-w-2xl text-sm text-slate-600">${i.description || "Details a venir"}</p>
+            </div>
+            <div class="rounded-2xl bg-emerald-500/10 px-5 py-4 text-sm text-emerald-900 shadow-inner">
+              <p class="font-semibold text-emerald-800">Activites phares</p>
+              <p class="mt-1 text-sm text-emerald-700">${i["activit\u00E9"] || "Activites a venir"}</p>
+            </div>
+          </header>
+          <div class="mt-8 grid gap-4 md:grid-cols-[2fr_1fr] lg:grid-cols-[2fr_1fr]">
+            <figure class="group relative overflow-hidden rounded-3xl border border-white/40 bg-slate-100/60 shadow-inner md:row-span-2">
+              <img src="${i.img1 || i.img2 || ""}" alt="Inspiration ${i.name}" class="h-72 md:h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+              <figcaption class="absolute inset-x-0 bottom-0 bg-slate-900/70 px-4 py-2 text-xs font-medium uppercase tracking-wide text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                ${i.img1Text}
+              </figcaption>
+            </figure>
+            <figure class="group relative overflow-hidden rounded-2xl border border-white/40 bg-slate-100/60 shadow-inner">
+              <img src="${i.img2 || i.img1 || ""}" alt="Experience ${i.name}" class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+              <figcaption class="absolute inset-x-0 bottom-0 bg-slate-900/70 px-3 py-2 text-xs font-medium uppercase tracking-wide text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                ${i.img2Text}
+              </figcaption>
+            </figure>
+            <figure class="group relative overflow-hidden rounded-2xl border border-white/40 bg-slate-100/60 shadow-inner">
+              <img src="${i.img3 || i.img1 || ""}" alt="Activite ${i.name}" class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+              <figcaption class="absolute inset-x-0 bottom-0 bg-slate-900/70 px-3 py-2 text-xs font-medium uppercase tracking-wide text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                ${i.img3Text}
+              </figcaption>
+            </figure>
           </div>
+        </article>
         `
         );
       }
