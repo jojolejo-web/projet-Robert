@@ -37,6 +37,11 @@
 			</div>
 		</section>
 
+		<section class="flex flex-col items-center justify-center py-10">
+			<h4 class="text-xl grey font-light">Nous vous montrons à présent lesa ctivités phares de chaque région !
+			</h4>
+		</section>
+
 	</main>
 
 	<footer class="bg-green-hours p-12 flex items-center justify-center">
@@ -57,11 +62,16 @@
 			(i) => `
 				<div class="accordion-item">
 					<button class="accordion-header">
-						<p class="px-4 text-2xl">
+						<div class="flex items-center w-[500px]">
+							<p class="px-4 text-2xl">
 							${i.top}
 						</p>
-						<p class="text-xl font-bold">${i.nomLieu}</p>
-						<P>${i.nomRegion}</p>
+						<p class="text-xl font-bold text-start">${i.nomLieu}</p>
+							</div>
+						<div class="w-[500px]">
+							<p >${i.nomRegion}</p>
+							</div>
+						
 						<img src="./public/down-arrow.png"  class="accordion-icon " alt="cité de Carcassonne" width="2%">
 					</button>
 					<div class="accordion-content flex items-center justify-center gap-10">
