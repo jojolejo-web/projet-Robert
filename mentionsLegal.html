@@ -1,45 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-            <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <title>Mentions Légales</title>
-  </head>
-  <body>
-    <header
-      class="w-full bg-transparent fixed top-0 z-10"
-      style="overflow: hidden">
-      <nav class="flex justify-between px-8 items-center bg-green-hours">
-        <figure class="">
-          <img src="./public/GoOut.png" alt="Logo" class="w-12" />
-        </figure>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-        <div class="flex gap-4" style="translate: -30px">
-          <a href="/" class="no-underline text-black"> Accueil </a>
-          <a href="./lieux.html" class="no-underline text-black"> Lieux </a>
+  <title>Mentions Légales</title>
+</head>
 
-          <a href="./Apropos.html" class="no-underline text-black">
-            A propos
-          </a>
-        </div>
+<body>
+  <header class="top-0 fixed w-full flex flex-col items-center z-30">
+    <nav class="flex gap-4 py-2 px-12  rounded-full  items-center justify-center ">
+      <figure class="">
+        <img src="./public/GoOut.png" alt="Logo" class="w-12" />
+      </figure>
+      <a href="/" class="no-underline py-2 px-3 rounded-full navLink"> Accueil </a>
+      <a href="./lieux.html" class="no-underline py-2 px-3 rounded-full navLink"> Lieux </a>
 
-        <div>
-          <button class="bg-green py-3 px-5 rounded-full border-0 hoverbtn">
-            <a href="./Contact.html" class="text-color no-underline font-bold">
-              Contact
-            </a>
-          </button>
-        </div>
-      </nav>
-    
-    </header>
-      <footer class="bg-green p-12 flex items-center justify-center">
-        <p class="">© 2025 Entreprise GoOut. Tous droits réservés. | <a class="no-underline text-black hover-link" href="./mentionsLegal.html">Mentions légales</a> |
-            Politique de confidentialité</p>
-    </footer>
-  </body>
+      <a href="./Apropos.html" class="no-underline py-2 px-3 rounded-full navLink"> À propos </a>
+      <a href="./Contact.html" class="no-underline py-2 px-3 rounded-full navLink"> Contact </a>
+    </nav>
+  </header>
+  <footer class="bg-green p-12 flex items-center justify-center">
+    <p class="">© 2025 Entreprise GoOut. Tous droits réservés. | <a class="no-underline text-black hover-link"
+        href="./mentionsLegal.html">Mentions légales</a> |
+      Politique de confidentialité</p>
+  </footer>
+</body>
+
 </html>
-   
