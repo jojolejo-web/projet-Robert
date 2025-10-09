@@ -70,15 +70,14 @@ const lieux = [
         img: "./public/carca.jpg",
         text: " Dominant l'Aude depuis son éperon rocheux, la Cité de Carcassonne est la plus grande forteresse médiévale conservée d'Europe et un chef-d'œuvre de l'architecture militaire. Ses 3 kilomètres de remparts doubles, ses 52 tours et son château comtal forment un ensemble défensif impressionnant qui témoigne de 2 500 ans d'histoire. La cité a connu les Romains, les Wisigoths, les Sarrasins, avant de devenir un bastion stratégique du royaume de France face à l'Aragon. Ce qui rend Carcassonne si spectaculaire, c'est qu'elle offre une expérience immersive totale dans le Moyen Âge : en franchissant la porte Narbonnaise, on pénètre dans un autre temps. Les ruelles pavées, les maisons à colombages, les échoppes d'artisans, la basilique Saint-Nazaire avec ses vitraux exceptionnels, tout contribue à cette atmosphère unique. Le château comtal, avec ses hourds en bois reconstitués, ses salles d'armes et son musée lapidaire, permet de comprendre la vie d'une forteresse médiévale. La restauration controversée mais spectaculaire menée par Viollet-le-Duc au XIXe siècle a sauvé la cité de la ruine et lui a donné son allure de conte de fées, avec ses toitures d'ardoise caractéristiques en poivrières. De nuit, l'illumination de la cité crée un spectacle féerique visible à des kilomètres. Avec 4 millions de visiteurs par an, Carcassonne est le deuxième monument le plus visité de France après le Mont-Saint-Michel.",
     },
-
-
 ]
+
 
 const activités = [
     {
         region : "Bretagne",
-        description : "",
-        listAct : "",
+        description : "Côtes sauvages battues par les vents, mégalithes mystérieux, crêperies authentiques et culture celte vivace.",
+        listAct : ["Admirer les alignements de Carnac", "Visiter Saint-Malo et ses remparts", "Déguster crêpes et galettes", "Faire le tour du GR34 (sentier des douaniers)", "Explorer la Côte de Granit Rose"],
     },
     {
         region : "Bretagne",

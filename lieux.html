@@ -38,7 +38,7 @@
 			</div>
 		</section>
 
-		<section class="flex flex-col items-center justify-center py-10 gap-2">
+		<section class="flex flex-col items-center justify-center mt-10 py-10 gap-2">
 			<p class="flex justify-center items-center secondary-color font-bold text-xl">Activités</p>
 			<h4 class="text-xl grey font-light">Ici, nous vous proposons les activités typiques des régions françaises !</h4>
 		</section>
@@ -97,15 +97,30 @@
 
 		cardActivités.innerHTML = activités.map(
 			(i) => `
-				<div class="p-8 m-10 columns-3 bg-green-100 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-					<h4>Bretagne</h4>
+				<div class="flex flex-col gap-2 p-4 m-4 columns-4 bg-green-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
 					<div class="p-4">
-						<h3 class="font-bold text-xl mb-2">${i.Region || ''}</h3>
-						<p class="text-gray-700">${i.description || ''}</p>
-						<div class="mt-4 flex justify-between items-center">
-							<span class="text-sm text-gray-500">${i.listAct || ''}</span>
-							<button class="bg-green-hours px-4 py-2 rounded-md hover:bg-opacity-80 transition-colors">
-								Voir plus
+						<div class="bg-gray-500/10 p-2 rounded-md shadow-md">
+							<h3 class="font-bold text-xl mb-2">${i.region || ''}</h3>
+							<p class="text-gray-700 text-sm font-light m-2">${i.description || ''}</p>
+						</div>
+						<div class="mt-6 flex flex-col justify-between items-center">
+							<div class="space-y-1 mb-6">
+								<p class="font-semibold"> Activités à faire en ${i.region} : </p>
+							${i.listAct ? Array.isArray(i.listAct) ? 
+								i.listAct.map(act => `
+									<div class="flex items-center text-sm text-gray-500">
+										<svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+										</svg>
+										<p class="text-sm">${act}</p>
+									</div>
+								`).join('') 
+								: 
+								`<div class="text-sm text-gray-500">${i.listAct}</div>`
+							: ''}
+							</div>
+							<button class="bg-emerald-800 px-4 py-2 m-4 rounded-md hover:bg-opacity-80 transition-colors shadow-sm">
+								<span class="text-white">Voir plus</span>
 							</button>
 						</div>
 					</div>
