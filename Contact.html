@@ -2,53 +2,85 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-            <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <title>Document</title>
+  <title>Contact</title>
 </head>
 
 <body>
-    <header class="top-0 fixed w-full flex flex-col items-center z-30">
-      <nav class="flex gap-4 py-2 px-12  rounded-full  items-center justify-center " >
-        <figure class="">
-          <img src="./public/GoOut.png" alt="Logo" class="w-12" />
-        </figure>
-        <a href="/" class="no-underline py-2 px-3 rounded-full navLink"> Accueil </a>
-        <a href="./lieux.html" class="no-underline py-2 px-3 rounded-full navLink"> Lieux </a>
+  <header class="top-0 fixed w-full flex flex-col items-center z-30">
+    <nav class="flex gap-4 py-2 px-12  rounded-full  items-center justify-center ">
+      <figure class="">
+        <img src="./public/GoOut.png" alt="Logo" class="w-12" />
+      </figure>
+      <a href="./index.html" class="no-underline py-2 px-3 rounded-full navLink"> Accueil </a>
+      <a href="./lieux.html" class="no-underline py-2 px-3 rounded-full navLink"> Lieux </a>
 
-        <a href="./Apropos.html" class="no-underline py-2 px-3 rounded-full navLink" > À propos </a>
-        <a href="./Contact.html" class="no-underline py-2 px-3 rounded-full navLink" > Contact </a>
-      </nav>
-    </header>
+      <a href="./Apropos.html" class="no-underline py-2 px-3 rounded-full navLink"> À propos </a>
+      <a href="./Contact.html" class="no-underline py-2 px-3 rounded-full navLink"> Contact </a>
+    </nav>
+  </header>
 
-    <main class="py-24">
-      <section>
-        <p class="flex justify-center items-center secondary-color font-bold text-xl">Contact</p>
-        <h1 class="flex justify-center items-center text-black font-bold text-4xl">Un avis, conseil, problème à signaler... C'est ici !</h1>
-        <h4 class="flex justify-center items-center text-center grey text-xl">Aidez nous à
-            améliorer notre site.</h4>
-        <form class="p-10 flex flex-col items-center justify-center gap-8">
-            <label class="font-light flex items-center justify-center gap-4 text-lg">
-                Mail :
-                <input type="email" class=" rounded-2xl px-8 py-2 border-black border-2" placeholder="nom@exemple.com"></input>
-            </label>
-            <label class="font-light flex flex-col items-center justify-center gap-4 text-lg">
-                Un message à nous faire passer ?
-                <textarea class="rounded-xl border-black border-2 p-10"></textarea>
-            </label>
-            <button class="bg-green py-3 px-5 rounded-full border-0 hoverbtn">
-                <a class="text-color no-underline font-bold">Envoyer</a>
-            </button>
-        </form>
+  <main class="py-24">
+  
+      <p class="flex justify-center items-center secondary-color font-bold text-xl pb-5">Contact</p>
+      <h1 class="flex justify-center items-center text-black font-bold text-4xl pb-5">Un avis, conseil, problème à
+        signaler... C'est ici !</h1>
+      <h4 class="flex justify-center items-center text-center grey text-xl pb-5">Aidez nous à
+        améliorer notre site.</h4>
+      <section class="py-16 sm:py-24 lg:py-32">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col items-center">
+            <div class="mt-12 w-full max-w-2xl">
+              <div class="rounded-lg bg-zinc-50 p-8 shadow-sm">
+                <form class="space-y-6">
+                  <div>
+                    <label class="block text-sm font-medium text-zinc-700" for="name">Your Name</label>
+                    <div class="mt-1">
+                      <input
+                        class="block w-full rounded-md border-zinc-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm h-12 px-4"
+                        id="name" name="name" placeholder="Enter your name" type="text" />
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-zinc-700" for="email">Your Email</label>
+                    <div class="mt-1">
+                      <input
+                        class="block w-full rounded-md border-zinc-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm h-12 px-4"
+                        id="email" name="email" placeholder="Enter your email address" type="email" />
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-zinc-700" for="message">Your Message</label>
+                    <div class="mt-1">
+                      <textarea
+                        class="block w-full rounded-md border-zinc-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm p-4"
+                        id="message" name="message" placeholder="How can we help?" rows="6"></textarea>
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-md h-12 px-6 bg-green-600 text-base font-bold text-white transition-colors hover:bg-green-700"
+                      type="submit">
+                      <span class="truncate">Send Message</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-    </main>
-        <script src="./js/nav.js"></script>
+    
+  </main>
+  <script src="./js/nav.js"></script>
 
-    <footer class="bg-green-hours p-12 flex items-center justify-center">
-        <p class="">© 2025 Entreprise GoOut. Tous droits réservés. | <a class="no-underline text-black hover-link" href="./mentionsLegal.html">Mentions légales</a> |
-                    | <a class="no-underline text-black hover-link" href="./politiquesConf.html">Politique de confidentialité</a></p>
-    </footer>
-    </body>
+  <footer class="bg-green-hours p-12 flex items-center justify-center">
+    <p class="">© 2025 Entreprise GoOut. Tous droits réservés. | <a class="no-underline text-black hover-link"
+        href="./mentionsLegal.html">Mentions légales</a> |
+      | <a class="no-underline text-black hover-link" href="./politiquesConf.html">Politique de confidentialité</a></p>
+  </footer>
+</body>
