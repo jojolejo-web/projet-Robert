@@ -73,3 +73,9 @@ const lieux = [
 
 
 ]
+
+const activités = [
+    {
+        
+    }
+]

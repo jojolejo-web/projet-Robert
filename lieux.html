@@ -14,7 +14,7 @@
 	<header class="top-0 fixed w-full flex flex-col items-center z-30">
 		<nav class="flex gap-4 py-2 px-12  rounded-full  items-center justify-center ">
 			<figure class="">
-				<img src="./public/GoOut.png" alt="Logo" class="w-12" />
+				<img src="./public/GoOut.png" alt="Logo" class="w-14" />
 			</figure>
 			<a href="./index.html" class="no-underline py-2 px-3 rounded-full navLink"> Accueil </a>
 			<a href="./lieux.html" class="no-underline py-2 px-3 rounded-full navLink"> Lieux </a>
@@ -22,6 +22,7 @@
 			<a href="./Apropos.html" class="no-underline py-2 px-3 rounded-full navLink"> À propos </a>
 			<a href="./Contact.html" class="no-underline py-2 px-3 rounded-full navLink"> Contact </a>
 		</nav>
+
 	</header>
 
 	<main class="py-24">
@@ -33,17 +34,8 @@
 		</section>
 
 		<section class="flex flex-col items-center justify-center py-10">
-			<div class="accordion w-75pourcent" id="data-lieux">
+			<div class="accordion" id="data-lieux">
 			</div>
-		</section>
-
-		<section class="flex flex-col items-center justify-center py-10">
-			<h4 class="text-xl grey font-light">Nous vous montrons à présent les activités phares de chaque région !
-			</h4>
-		</section>
-
-		<section>
-			<div class="" id="card-activités"></div>
 		</section>
 
 	</main>
@@ -59,10 +51,10 @@
 
 	<script src="data/page-lieux.js"></script>
 	<script>
-
+		
 		const dataLieux = document.getElementById("data-lieux");
-
-		dataLieux.innerHTML = lieux.map(
+		
+			dataLieux.innerHTML = lieux.map(
 			(i) => `
 				<div class="accordion-item">
 					<button class="accordion-header">
@@ -87,12 +79,10 @@
 						</section>
 					</div>
 				</div>`
-		).join('')
+			).join('')
+		
 
-
-		const dataLieux = document.getElementById("card-activités");
-
-
+	
 
 
 		const accordionHeaders = document.querySelectorAll('.accordion-header');
