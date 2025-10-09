@@ -76,6 +76,8 @@ const lieux = [
 
 const activités = [
     {
-        
+        region : "Bretagne",
+        description : "",
+        listAct : "",
     }
 ]

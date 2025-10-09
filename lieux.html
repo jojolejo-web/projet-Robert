@@ -26,7 +26,7 @@
 	</header>
 
 	<main class="py-24">
-		<section class="flex flex-col items-center justify-center py-10">
+		<section class="flex flex-col items-center justify-center py-10 gap-2">
 			<p class="flex justify-center items-center secondary-color font-bold text-xl">Lieux</p>
 			<h1 class="text-4xl">Nos 10 lieux préférés en France</h1>
 			<h4 class="text-xl grey font-light">Nous vous proposons des endroits incontournables et authentique de notre
@@ -35,6 +35,16 @@
 
 		<section class="flex flex-col items-center justify-center py-10">
 			<div class="accordion" id="data-lieux">
+			</div>
+		</section>
+
+		<section class="flex flex-col items-center justify-center py-10 gap-2">
+			<p class="flex justify-center items-center secondary-color font-bold text-xl">Activités</p>
+			<h4 class="text-xl grey font-light">Ici, nous vous proposons les activités typiques des régions françaises !</h4>
+		</section>
+
+		<section class="flex flex-col items-center justify-center py-10">
+			<div class="card" id="card-act">
 			</div>
 		</section>
 
@@ -52,6 +62,7 @@
 	<script src="data/page-lieux.js"></script>
 	<script>
 		
+
 		const dataLieux = document.getElementById("data-lieux");
 		
 			dataLieux.innerHTML = lieux.map(
@@ -82,6 +93,25 @@
 			).join('')
 		
 
+		const cardActivités = document.getElementById('card-act');
+
+		cardActivités.innerHTML = activités.map(
+			(i) => `
+				<div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+					<h4>Bretagne</h4>
+					<div class="p-4">
+						<h3 class="font-bold text-xl mb-2">${i.Region || ''}</h3>
+						<p class="text-gray-700">${i.description || ''}</p>
+						<div class="mt-4 flex justify-between items-center">
+							<span class="text-sm text-gray-500">${i.listAct || ''}</span>
+							<button class="bg-green-hours px-4 py-2 rounded-md hover:bg-opacity-80 transition-colors">
+								Voir plus
+							</button>
+						</div>
+					</div>
+				</div>
+			`
+			).join('')
 	
 
 
