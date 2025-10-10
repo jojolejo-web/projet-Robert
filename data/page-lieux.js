@@ -140,3 +140,16 @@ const activités = [
         listAct : ["Visiter les Calanques de Marseille", "Explorer les marchés provençaux", "Découvrir les villages perchés du Luberon", "Se détendre sur la Côte d'Azur (Nice, Cannes)", "Randonner dans les Gorges du Verdon"],
     },
 ]
+
+const modalAct = [
+    {
+        id : "Auvergne-Rhône-Alpes",
+        title : "Auvergne-Rhône-Alpes",
+        img1 : "",
+        img2 : "",
+        img3 : "",
+        texte : "ARAAAAAA",
+    },
+]
+
+window.modalAct = modalAct;
