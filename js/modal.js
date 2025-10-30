@@ -14,10 +14,20 @@ document.addEventListener('DOMContentLoaded', () => {
             if (modalData) {
                 // Remplir la modal avec les données
                 dialog.querySelector('#modalTitle').textContent = modalData.title;
-                dialog.querySelector('#modalTexte').textContent = modalData.texte;
-                // etc...
-                
-                dialog.showModal(); // Ouvre la modal
+
+                dialog.querySelector('#modalImg1').src = modalData.img1;
+                dialog.querySelector('#modalImg2').src = modalData.img2;
+                dialog.querySelector('#modalImg3').src = modalData.img3;
+
+                dialog.querySelector('#modalLieu1').textContent = modalData.lieu1;
+                dialog.querySelector('#modalLieu2').textContent = modalData.lieu2;
+                dialog.querySelector('#modalLieu3').textContent = modalData.lieu3;
+
+                dialog.querySelector("#modalText1").textContent = modalData.text1;
+                dialog.querySelector("#modalText2").textContent = modalData.text2;
+                dialog.querySelector("#modalText3").textContent = modalData.text3;
+               
+                dialog.showModal(); 
             }
         });
     });
